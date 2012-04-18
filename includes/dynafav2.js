@@ -1,3 +1,8 @@
+// ==UserScript==
+// @name DynaFav2
+// @version 2.0.2
+// @include https://*salesforce.com*
+// ==/UserScript==
 /*
  Copyright 2012 Etienne Giraudy
 
@@ -39,22 +44,11 @@ if (typeof chrome !== "undefined") {
 }
 
 
-/////////////////////////////////
-
-//function HandleOnLoad (event) {
-//	if ( favicon.process() ) {
-//		setInterval('favicon.process()', 3000);
-//	}
-//}
-
 var favicon = {
 
 config:
 		[
-			['62org', 'na1.salesforce.com', '00D000000000062', '62' ],
-			['GUS', 'gus.salesforce.com', '', 'G' ],
-			['Login', 'login.salesforce.com', '', 'L' ],
-			['peopleforce', 'na5.salesforce.com', '00D70000000Jxye', 'P']
+			['Foo', 'www.bar.com', '00D000000000042', 'X' ]
 		],
 
 process:
