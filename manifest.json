@@ -1,8 +1,8 @@
 {
   "name": "DynaFav2",
-  "version": "2.0.1",
-  "description": "Dynically modifies favicons",
-  "icons": { "128": "icons/dynafav128.jpg"},
+  "version": "2.0.3",
+  "description": "Dynically modifies salesforce favicons",
+  "icons": { "128": "icons/dynafav128.png"},
   "options_page": "options.html",
   "background_page": "index.html",
   "content_scripts": [

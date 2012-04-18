@@ -30,7 +30,11 @@ License
 Version History
 ---------------
 
-*Version 2.0.8 - 2012/04/18*
+*Version 2.0.3 - 2012/04/18*
+
+- Fix icon reference for Chrome
+
+*Version 2.0.2 - 2012/04/18*
 
 - Added some explanations on the configuration page
 - Fixes for Opera publishing
@@ -38,4 +42,4 @@ Version History
 
 *Version 2.0.1 - 2012/04/17*
 
-First published version, Chrome only
+- First published version, Chrome only
