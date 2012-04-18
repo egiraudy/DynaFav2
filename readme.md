@@ -5,6 +5,7 @@ Watermark salesforce favicon.
 Very useful when having multiple browser tabs open on each of your main production org, a sandbox org and a developper org!
 
 Chrome extension: http://bit.ly/DynaFav2chr
+
 Opera extension: http://bit.ly/DynaFav2opr
 
 
@@ -36,4 +37,5 @@ Version History
 - Opera publishing
 
 *Version 2.0.1 - 2012/04/17*
+
 First published version, Chrome only
