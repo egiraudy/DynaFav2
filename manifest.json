@@ -1,0 +1,16 @@
+{
+  "name": "DynaFav2",
+  "version": "2.0.1",
+  "description": "Dynically modifies favicons",
+  "icons": { "128": "icons/dynafav128.jpg"},
+  "options_page": "options.html",
+  "background_page": "index.html",
+  "content_scripts": [
+    {
+      "matches": ["https://*.salesforce.com/*"],
+      "js": ["includes/dynafav2.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}

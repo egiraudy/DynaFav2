@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DynaFav options page</title>
+	<style type="text/css">
+		#wrapper {
+		  margin: 1em auto;
+		  width: 800px;
+		  background-color: lightgrey;
+		  padding: 0.5em;
+		  border-radius: 20px;
+		  box-shadow: 6px 6px 7px #89a, 2px 2px 2px #89a ;
+		}
+		
+		h1 {
+		  font-family: sans-serif;
+		  font-size: 1.3em;
+		}
+		
+		label {
+          display: block;
+          width: 100px;
+          float: left;
+          clear: left;
+          text-align: right;
+          margin-left: -1em;
+        }
+
+        select {
+          //margin-left: 1em;
+          width: 150px;
+          font-size: 0.8em;
+        }
+        
+        li {
+          list-style-type: none;
+        }
+	</style>
+	
+	<script type="text/javascript">
+		var idx = 5;
+		function saveOptions() {
+			for (var i=0; i<idx; i++) {
+				var values = new Array();
+				values.push(document.getElementById( 'org'+(i+1)+'name' ).value);
+				values.push(document.getElementById( 'org'+(i+1)+'host' ).value);
+				values.push(document.getElementById( 'org'+(i+1)+'id' ).value);
+				values.push(document.getElementById( 'org'+(i+1)+'tag' ).value);
+				
+				localStorage.setItem('org'+(i+1), values.join(';'));
+			}
+			localStorage.setItem('numberofsites', idx);
+		}
+		
+		function loadOptions() {
+			if (localStorage.getItem('numberofsites') && localStorage.getItem('numberofsites').length>0) {
+				idx = 0 + localStorage.getItem('numberofsites');
+			}
+			for (var i=0; i<idx; i++) {
+				var values = localStorage.getItem('org'+(i+1));
+				if (values) {
+					values = values.split(";");
+					document.getElementById( 'org'+(i+1)+'name' ).value = values[0];
+					document.getElementById( 'org'+(i+1)+'host' ).value = values[1];
+					document.getElementById( 'org'+(i+1)+'id' ).value = values[2];
+					document.getElementById( 'org'+(i+1)+'tag' ).value = values[3];
+				}
+			}
+		}
+		window.addEventListener( 'DOMContentLoaded', loadOptions, false );
+	</script>
+
+</head>
+<body>
+	<div id="wrapper"> 
+	<h1>Options page for DynaFav</h1> 
+	<form>
+	
+		<table>
+			<tr>
+				<th>Name</th><th>Host</th><th>Id</th><th>Tag</th>
+			</tr>
+			<tr>
+				<td><input type="text" id="org1name" /></td>
+				<td><input type="text" id="org1host" /></td>
+				<td><input type="text" id="org1id" /></td>
+				<td><input type="text" id="org1tag" /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="org2name" /></td>
+				<td><input type="text" id="org2host" /></td>
+				<td><input type="text" id="org2id" /></td>
+				<td><input type="text" id="org2tag" /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="org3name" /></td>
+				<td><input type="text" id="org3host" /></td>
+				<td><input type="text" id="org3id" /></td>
+				<td><input type="text" id="org3tag" /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="org4name" /></td>
+				<td><input type="text" id="org4host" /></td>
+				<td><input type="text" id="org4id" /></td>
+				<td><input type="text" id="org4tag" /></td>
+			</tr>
+			<tr>
+				<td><input type="text" id="org5name" /></td>
+				<td><input type="text" id="org5host" /></td>
+				<td><input type="text" id="org5id" /></td>
+				<td><input type="text" id="org5tag" /></td>
+			</tr>
+		</table>
+		
+		<button onclick="saveOptions(); return false;">Save</button>
+	</form> 
+	</div>
+</body>
+</html>
