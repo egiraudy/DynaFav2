@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" version="2.0.2" id="dynafav2">
+<widget xmlns="http://www.w3.org/ns/widgets" version="2.0.7" id="dynafav2">
     <name>DynaFav2</name>
     <author href="http://people.opera.com/egiraudy/">Etienne Giraudy</author>
     <description xml:lang="en">Dynically modifies salesforce.com favicons</description>
     <license href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2.0 License</license>
-	 <icon src="icons/dynafav128.png" />
+     <icon src="icons/dynafav128.png" />
 </widget>

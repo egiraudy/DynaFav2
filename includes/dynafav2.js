@@ -65,7 +65,7 @@ var favicon = {
             //}
 
             var color = 'black';
-            if (title!==null && title && title.innerHTML==='New Chatter updates!')
+            if (title!==null && title && (title.innerHTML==='New Chatter updates!' || title.innerHTML==='New updates!'))
                 color = 'red';
 
             var buddy = document.getElementById('buddy_list_notify');
