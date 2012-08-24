@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget xmlns="http://www.w3.org/ns/widgets" version="2.0.7" id="dynafav2">
+<widget xmlns="http://www.w3.org/ns/widgets" version="2.0.8" id="dynafav2">
     <name>DynaFav2</name>
     <author href="http://people.opera.com/egiraudy/">Etienne Giraudy</author>
     <description xml:lang="en">Dynically modifies salesforce.com favicons</description>
